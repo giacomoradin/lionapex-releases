@@ -1,0 +1,28 @@
+name: Proposta Nuova Funzionalità
+description: Suggerisci una nuova idea o un miglioramento per LIONApex.
+title: "[FEATURE]: "
+labels: ["enhancement", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Condividi con noi la tua visione per migliorare LIONApex!
+  - type: textarea
+    id: problem
+    attributes:
+      label: Il tuo suggerimento è collegato a un problema o a una limitazione attuale?
+      description: Una descrizione chiara e concisa di cosa manca o è scomodo.
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Descrivi la soluzione o la funzionalità desiderata
+      description: Come dovrebbe funzionare la novità secondo te?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternative o contesti d'uso considerati (opzionale)
+      description: Ci sono altri player o strumenti che fanno qualcosa di simile?

@@ -1,0 +1,16 @@
+name: Feedback Generale & Esperienza d'Uso
+description: Condividi la tua opinione, un feedback sull'interfaccia o un consiglio.
+title: "[FEEDBACK]: "
+labels: ["feedback", "community"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Tutti i suggerimenti sono i benvenuti per perfezionare il design, le prestazioni e la resa audio.
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Il tuo feedback
+      description: Raccontaci la tua esperienza d'uso con LIONApex.
+    validations:
+      required: true

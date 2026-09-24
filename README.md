@@ -1,105 +1,155 @@
-# LIONApex — Master your Signal 🎵
+<div align="center">
 
-[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-0078D6.svg)](https://github.com/giacomoradin/lionapex-releases/releases)
-[![Audio Engine](https://img.shields.io/badge/Audio%20Engine-Rust%20WASAPI%20%7C%20ALSA%20%7C%20CoreAudio-dea584.svg)](https://github.com/giacomoradin/lionapex-releases)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+# 🎵 LIONApex — Master your Signal
 
-**LIONApex** (Lossless Input Output Node) è un riproduttore musicale ad alte prestazioni con architettura bit-perfect nativa, progettato per audiofili e amanti della musica pura.
+### Il Player Audio Lossless Bit-Perfect ad Alta Precisione
 
----
+[![Latest Release](https://img.shields.io/github/v/release/giacomoradin/lionapex-releases?color=FF6600&label=Release%20Stabile&logo=github)](https://github.com/giacomoradin/lionapex-releases/releases/latest)
+[![Platform](https://img.shields.io/badge/Piattaforme-Windows%20%7C%20Linux%20%7C%20macOS-0078D6.svg?logo=windows&logoColor=white)](https://github.com/giacomoradin/lionapex-releases/releases)
+[![Audio Engine](https://img.shields.io/badge/Audio%20Engine-WASAPI%20%7C%20ALSA%20%7C%20CoreAudio-dea584.svg?logo=rust&logoColor=white)](https://github.com/giacomoradin/lionapex-releases)
+[![Auto Updater](https://img.shields.io/badge/Auto--Updater-Minisign%20Ed25519-success.svg?logo=shield&logoColor=white)](https://github.com/giacomoradin/lionapex-releases)
+[![Licenza](https://img.shields.io/badge/Licenza-MIT-blue.svg)](LICENSE)
 
-## 📥 Download Ufficiali
+<p align="center">
+  <b>LIONApex</b> (Lossless Input Output Node) è progettato per audiofili e amanti del suono non compresso. Offre un'esperienza d'ascolto senza compromessi, con bypass del mixer di sistema operativo, routing bit-perfect a bassissima latenza, equalizzazione parametrica da studio e interfaccia adattiva.
+</p>
 
-Scarica l'eseguibile adatto al tuo sistema operativo dall'ultima release:
+[📥 Scarica Ora](#-download-ufficiali--canali-di-rilascio) • [🧙‍♂️ Setup Wizard](#-primo-avvio-setup-wizard-guidato) • [💼 Versioni Portable](#-come-usare-le-versioni-portable) • [💬 Community & Feedback](#-community-segnalazioni-e-feedback)
 
-👉 **[Vai alla Pagina di Download (Ultima Release)](https://github.com/giacomoradin/lionapex-releases/releases/latest)**
-
-### Guida ai file disponibili:
-
-| Sistema Operativo | File da Scaricare | Descrizione |
-| :--- | :--- | :--- |
-| **Windows 10 / 11** | `LIONApex_*_x64-setup.exe` | Installer ufficiale per Windows (64-bit) |
-| **Arch Linux / Manjaro / Fedora / Linux generico** | `LIONApex_*_amd64.AppImage` | Pacchetto universale autonomo (funziona su qualsiasi distro) |
-| **Debian / Ubuntu / Linux Mint** | `LIONApex_*_amd64.deb` | Pacchetto DEB nativo per distribuzioni Debian-based |
-| **macOS (Intel & Apple Silicon)** | `LIONApex_*_x64.dmg` | Immagine disco con applicazione macOS nativa |
-
-> ⚠️ **IMPORTANTE: Cosa sono i file con estensione `.sig`?**  
-> I file che terminano per `.sig` (es. `LIONApex_0.1.0_x64-setup.exe.sig`) **NON sono eseguibili per Mac o Linux**.  
-> Sono firme crittografiche Minisign utilizzate in background dal motore di auto-aggiornamento (Tauri Updater) per verificare che l'eseguibile sia integro e autentico prima di installare gli aggiornamenti. Gli utenti **non devono scaricare né aprire i file `.sig`**.
+</div>
 
 ---
 
-## 🚀 Istruzioni di Installazione
+## 📥 Download Ufficiali & Canali di Rilascio
 
-### 🪟 Windows (10 o 11 a 64 bit)
-1. Scarica il file `LIONApex_*_x64-setup.exe`.
-2. Fai doppio clic per avviare l'installazione guidata.
-   * *Nota Windows SmartScreen:* Se Windows mostra l'avviso *"PC protetto da Windows"* (dovuto all'assenza di un certificato EV a pagamento per sviluppatori indipendenti), fai clic su **"Ulteriori informazioni"** e poi su **"Esegui comunque"**.
-3. Al termine dell'installazione, avvia **LIONApex** dal menu Start o dal desktop.
+Scegli il canale di rilascio e la versione adatta alle tue esigenze:
 
-### 🐧 Linux (Arch Linux, Manjaro, Fedora, openSUSE)
-1. Scarica il file `LIONApex_*_amd64.AppImage`.
-2. Apri il terminale nella cartella di download e rendi eseguibile il file:
+### 🟢 Canale Stabile (Consigliato)
+Contiene le versioni testate e pronte per l'uso quotidiano.
+
+| Sistema Operativo | Tipo di Pacchetto | File da Scaricare | Note d'Installazione |
+| :--- | :--- | :--- | :--- |
+| **🪟 Windows (10/11 64-bit)** | **Installer Guidato** | [`LIONApex_*_x64-setup.exe`](https://github.com/giacomoradin/lionapex-releases/releases/latest) | Installazione con integrazione nel menu Start e scorciatoie |
+| **🪟 Windows (10/11 64-bit)** | **💼 Versione Portable** | [`LIONApex_x64_Portable.zip`](https://github.com/giacomoradin/lionapex-releases/releases/latest) | **Zero installazione**: estrai e avvia, ideale per chiavette USB |
+| **🐧 Linux (Universale)** | **💼 Portable AppImage** | [`LIONApex_*_amd64.AppImage`](https://github.com/giacomoradin/lionapex-releases/releases/latest) | Funziona su **qualsiasi distro** (Arch, Manjaro, Fedora, openSUSE, Debian, Ubuntu) |
+| **🐧 Linux (Debian/Ubuntu)** | **Pacchetto di Sistema** | [`LIONApex_*_amd64.deb`](https://github.com/giacomoradin/lionapex-releases/releases/latest) | Installazione nativa gestita da APT/dpkg |
+| **🍎 macOS (Apple Silicon & Intel)** | **Immagine Disco** | [`LIONApex_*_aarch64.dmg` / `x64.dmg`](https://github.com/giacomoradin/lionapex-releases/releases/latest) | Trascina in *Applicazioni* |
+
+👉 **[Apri la Pagina di Download dell'Ultima Release](https://github.com/giacomoradin/lionapex-releases/releases/latest)**
+
+---
+
+### 🟡 Canale Beta & Anteprime (Funzionalità Sperimentali)
+Se desideri provare in anteprima i nuovi moduli audio DSP, miglioramenti grafici o codec sperimentali:
+- Consulta i rilasci contrassegnati con l'etichetta **Pre-release** o **Beta**:  
+  👉 **[Esplora le Release Beta / Pre-release](https://github.com/giacomoradin/lionapex-releases/releases?q=prerelease%3Atrue)**
+
+---
+
+### 📦 Archivio Storico (Versioni Precedenti)
+Hai bisogno di ripristinare una versione specifica o consultare il changelog delle versioni passate?  
+👉 **[Consulta tutte le Release Precedenti](https://github.com/giacomoradin/lionapex-releases/releases)**
+
+---
+
+<details>
+<summary><b>🔒 File Tecnici & Firme Crittografiche (Clicca per espandere — Non scaricare manualmente)</b></summary>
+
+<br />
+
+All'interno dell'elenco delle release potresti notare file come:
+- `*.sig` (es. `LIONApex_*_setup.exe.sig`, `*.AppImage.sig`)
+- `latest.json`
+
+> ⚠️ **Importante per gli utenti:**  
+> **Non scaricare questi file**. Non sono file eseguibili per Mac o Linux.  
+> Sono **firme crittografiche Minisign (Ed25519)** e manifest informativi utilizzati in modo invisibile e automatico dal plugin **Tauri Auto-Updater** integrato in LIONApex. Quando apri LIONApex e verifichi gli aggiornamenti, l'applicazione legge questi file per certificare che l'aggiornamento sia autentico e non manomesso prima di installarlo.
+</details>
+
+---
+
+## 💼 Come Usare le Versioni Portable
+
+Le versioni **Portable** sono pensate per chi desidera usare LIONApex su computer diversi senza installare nulla nel sistema operativo:
+
+### 🪟 Windows Portable
+1. Scarica l'archivio `LIONApex_x64_Portable.zip`.
+2. Estrai la cartella dove preferisci (ad esempio sul Desktop o **direttamente dentro la tua chiavetta USB** `E:\LIONApex\`).
+3. Avvia `lionapex.exe` (o `LIONApex.exe`).
+4. **Vantaggi**:
+   - Non scrive chiavi nel registro di sistema di Windows.
+   - Non richiede diritti di amministratore.
+   - Se posizionato su una chiavetta USB insieme ai tuoi brani e al file `music.db`, ti permette di portare l'intero archivio musicale sempre con te su qualsiasi PC!
+
+### 🐧 Linux Portable (AppImage)
+1. Scarica `LIONApex_*_amd64.AppImage`.
+2. Assegna i permessi di esecuzione:
    ```bash
    chmod +x LIONApex_*_amd64.AppImage
    ```
-3. Avvia l'applicazione con un doppio clic oppure da terminale:
+3. Avvia l'applicazione con un doppio clic o da terminale:
    ```bash
    ./LIONApex_*_amd64.AppImage
    ```
-   *(Opzionale: puoi installare `appimagelauncher` con `sudo pacman -S appimagelauncher` su Arch Linux per integrarlo automaticamente nel menu di sistema).*
+4. Non richiede installazione né dipendenze esterne.
+
+---
+
+## 🚀 Istruzioni di Installazione (Versioni con Installer)
+
+### 🪟 Windows (10/11 a 64 bit)
+1. Scarica `LIONApex_*_x64-setup.exe` ed avvialo.
+2. *Nota Windows SmartScreen:* Se Windows mostra l'avviso *"PC protetto da Windows"*, clicca su **"Ulteriori informazioni"** e poi su **"Esegui comunque"**.
+3. Segui la procedura guidata e avvia LIONApex.
 
 ### 🐧 Debian / Ubuntu / Linux Mint
-1. Scarica il file `LIONApex_*_amd64.deb`.
-2. Installa il pacchetto tramite terminale:
-   ```bash
-   sudo dpkg -i LIONApex_*_amd64.deb
-   sudo apt-get install -f   # Risolve eventuali dipendenze di sistema
-   ```
-3. Avvia LIONApex dall'elenco delle applicazioni.
+```bash
+sudo dpkg -i LIONApex_*_amd64.deb
+sudo apt-get install -f   # Installa eventuali librerie mancanti se necessario
+```
 
 ### 🍎 macOS
-1. Scarica il file `LIONApex_*_x64.dmg`.
-2. Fai doppio clic sul file scaricato e trascina l'icona di **LIONApex** nella cartella **Applicazioni**.
-3. Al primo avvio, se Gatekeeper segnala che l'applicazione proviene da uno sviluppatore non identificato:
-   * Fai clic con il tasto destro sull'icona di LIONApex in Applicazioni -> Seleziona **Apri** -> Conferma facendo clic su **Apri**.
+1. Scarica `LIONApex_*_aarch64.dmg` (Apple Silicon) o `x64.dmg` (Intel).
+2. Fai doppio clic sul `.dmg` e trascina **LIONApex** in **Applicazioni**.
+3. Al primo avvio, se compare l'avviso di Gatekeeper: fai clic destro sull'icona in Applicazioni -> **Apri** -> conferma cliccando su **Apri**.
 
 ---
 
 ## 🧙‍♂️ Primo Avvio: Setup Wizard Guidato
 
-Alla prima apertura su un nuovo computer, LIONApex apre automaticamente la **Procedura Guidata di Benvenuto**:
+Alla prima apertura su un nuovo computer, LIONApex avvia la procedura guidata interattiva:
 
-1. **Cartelle Musicali**:
-   - **Cartella Locale / USB**: se hai la tua musica su una chiavetta USB (es. unità `E:\` o cartella locale), LIONApex la utilizzerà a latenza zero.
-   - **Cartella Cloud / Google Drive**: cartella cloud di riserva (es. `G:\My Drive\MUSIC_flac_wav_mp3`).
-   - **Cartella Download Brani**: la cartella dove salvare i nuovi brani scaricati.
-2. **Database Archivio (`music.db`)**:
-   - Clicca **"🔍 Trova in automatico"** per far scansionare all'istante tutte le unità connesse (`C:`..`Z:`) e collegare il database della tua chiavetta USB.
-   - Oppure clicca **"📥 Importa nel PC"** per copiare il database in locale sul computer e renderlo sempre accessibile anche a chiavetta scollegata.
-   - Oppure clicca **"✨ Crea archivio vuoto"** se parti da zero.
-3. **Servizi Esterni & Chiavi API (Completamente OPZIONALI)**:
-   - **Google Gemini AI**: attiva se desideri generare playlist tematiche intelligenti analizzando la tua libreria con i modelli Gemini.
-   - **ListenBrainz**: attiva per inviare la cronologia degli ascolti.
-   - *Tutte le chiavi sono personali e vengono memorizzate unicamente sul tuo computer locale (`%LOCALAPPDATA%\LIONApex\credenziali.json`).*
-4. Clicca **"Salva e Avvia"**: la libreria caricherà immediatamente tutti i tuoi brani, copertine e testi!
-
-> 💡 Puoi riaprire il Setup Wizard o modificare queste impostazioni in qualsiasi momento dal pulsante **"Configurazione Guidata"** nella scheda **Impostazioni**.
+1. **Selezione Sorgenti Musicali**:
+   - **Cartella Locale / USB**: seleziona la tua chiavetta USB (es. `E:\` o `E:\MUSIC_flac_wav_mp3`) o il disco locale.
+   - **Cartella Google Drive**: cartella sincronizzata sul cloud di riserva.
+   - **Cartella Download**: directory per i nuovi file audio scaricati.
+2. **Collegamento Database Archivio (`music.db`)**:
+   - Clicca **"🔍 Trova in automatico"** per scansionare istantaneamente tutte le unità USB e connettere il database esistente.
+   - Clicca **"📥 Importa nel PC"** se vuoi copiare il database sul computer locale per ascoltare la musica anche quando la chiavetta non è inserita.
+3. **Servizi API Opzionali (Configurabili dall'utente)**:
+   - **Google Gemini AI**: per abilitare le playlist generate con intelligenza artificiale.
+   - **ListenBrainz**: per inviare gli scrobble dei tuoi ascolti.
+   - *Tutte le chiavi API sono private e rimangono salvate esclusivamente sul tuo computer locale.*
 
 ---
 
-## ⚡ Caratteristiche Tecniche di LIONApex
+## 💬 Community, Segnalazioni e Feedback
 
-* 🎯 **Uscita Bit-Perfect Reale:**
-  - **Windows:** WASAPI Esclusiva (bypass totale del mixer di sistema e dei ricampionamenti Windows).
-  - **Linux:** ALSA Direct Hardware a campioni esatti e compatibilità PipeWire a bassa latenza.
-  - **macOS:** CoreAudio HAL bit-perfect nativo.
-* 🦀 **Motore Audio Nativo Rust (`audio-core`):** Decodifica autonoma ad altissima efficienza con Symphonia (FLAC, WAV, ALAC, MP3, AAC, OGG, Vorbis) con thread realtime MMCSS Pro Audio.
-* 🎧 **Calibrazione Cuffie AutoEq:** Database integrato con migliaia di curve di compensazione Harman / diffuse-field per cuffie e auricolari.
-* 🎚️ **Master Lab & DSP:** Equalizzatore parametrico a fase lineare a 10 bande, dither TPDF e limitatore True-Peak.
-* 📊 **Deck 3D Immersion & Spettro RTA:** Analizzatore di spettro FFT a 64 bande con rendering fluido e cadenza adattiva intelligente.
-* 📜 **Testi Sincronizzati:** Ricerca e sincronizzazione automatica dei testi (.lrc) in tempo reale.
+Siamo felici di ricevere il tuo parere per rendere LIONApex sempre più fedele e piacevole da usare:
+
+- 🐛 **Hai riscontrato un bug o un errore audio?**  
+  [Apri una Segnalazione di Bug](https://github.com/giacomoradin/lionapex-releases/issues/new?template=bug_report.yml) specificando il tuo sistema operativo e DAC audio.
+- 💡 **Hai un'idea per una nuova funzionalità?**  
+  [Invia una Proposta di Funzionalità](https://github.com/giacomoradin/lionapex-releases/issues/new?template=feature_request.yml).
+- 💬 **Vuoi condividere la tua opinione?**  
+  [Invia un Feedback Generale](https://github.com/giacomoradin/lionapex-releases/issues/new?template=feedback.yml).
+- 🔒 **Segnalazioni di Sicurezza:**  
+  Consulta la nostra [Politica di Sicurezza (SECURITY.md)](SECURITY.md).
+- 🤝 **Codice di Condotta:**  
+  Ci impegniamo a garantire una community aperta, rispettosa e accogliente: [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ---
 
-*LIONApex — Master your signal. Designed and engineered by Giacomo Radin.*
+## 📜 Licenza
+
+Distribuito con licenza **MIT**. Consulta il file [`LICENSE`](LICENSE) per i dettagli completi.

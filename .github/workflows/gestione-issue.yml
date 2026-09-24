@@ -1,0 +1,35 @@
+name: Gestione & Triage Automatico Issue
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  triage:
+    name: Assegna & Notifica Issue
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Assegna automaticamente a Giacomo Radin
+        uses: actions/github-script@v7
+        with:
+          script: |
+            // Assegna automaticamente la issue al proprietario del repository
+            await github.rest.issues.addAssignees({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              assignees: ['giacomoradin']
+            });
+
+            // Invia un messaggio di ringraziamento e conferma presa in carico
+            const autore = context.payload.issue.user.login;
+            const messaggio = `Grazie per il tuo contributo @${autore}! 🎵\n\nQuesta segnalazione è stata registrata e assegnata per la verifica. Ti aggiorneremo non appena avremo analizzato i dettagli.`;
+            
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: messaggio
+            });

@@ -1,0 +1,61 @@
+name: Segnalazione Bug
+description: Segnala un problema, un crash o un malfunzionamento di riproduzione in LIONApex.
+title: "[BUG]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Grazie per aiutarci a rendere LIONApex sempre più affidabile e preciso!
+  - type: dropdown
+    id: os
+    attributes:
+      label: Sistema Operativo
+      description: Su quale piattaforma stai riscontrando il problema?
+      options:
+        - "Windows 11 (64-bit)"
+        - "Windows 10 (64-bit)"
+        - "Linux - Arch Linux / Manjaro (AppImage)"
+        - "Linux - Debian / Ubuntu / Mint (.deb o AppImage)"
+        - "Linux - Altra distribuzione"
+        - "macOS - Apple Silicon (M1/M2/M3/M4)"
+        - "macOS - Intel"
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Versione di LIONApex
+      description: Quale versione stai eseguendo? (es. v0.1.1)
+      placeholder: v0.1.1
+    validations:
+      required: true
+  - type: input
+    id: audio_hardware
+    attributes:
+      label: Dispositivo Audio / DAC (opzionale)
+      description: Che DAC o interfaccia audio stai utilizzando? (es. Fiio K5 Pro via USB, Scheda audio integrata Realtek, ecc.)
+      placeholder: Es. Topping E30 II DAC USB
+  - type: textarea
+    id: description
+    attributes:
+      label: Descrizione del Problema
+      description: Spiega chiaramente cosa accade e cosa ti aspettavi accadesse invece.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Passaggi per Riprodurre il Problema
+      description: Quali azioni provocano l'errore?
+      placeholder: |
+        1. Avvia l'applicazione
+        2. Clicca su...
+        3. Riproduci un file FLAC a 24-bit 96kHz...
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Log Diagnostici o Schermate (opzionale)
+      description: Incolla eventuali messaggi di errore o trascina uno screenshot qui.
