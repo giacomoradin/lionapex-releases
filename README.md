@@ -9,12 +9,13 @@
 [![Audio Engine](https://img.shields.io/badge/Audio%20Engine-WASAPI%20%7C%20ALSA%20%7C%20CoreAudio-dea584.svg?logo=rust&logoColor=white)](https://github.com/giacomoradin/lionapex-releases)
 [![Auto Updater](https://img.shields.io/badge/Auto--Updater-Minisign%20Ed25519-success.svg?logo=shield&logoColor=white)](https://github.com/giacomoradin/lionapex-releases)
 [![Licenza](https://img.shields.io/badge/Licenza-MIT-blue.svg)](LICENSE)
+[![Privacy](https://img.shields.io/badge/Privacy-Zero%20Telemetry%20%7C%20GDPR-success.svg)](PRIVACY.md)
 
 <p align="center">
   <b>LIONApex</b> (Lossless Input Output Node) è progettato per audiofili e amanti del suono non compresso. Offre un'esperienza d'ascolto senza compromessi, con bypass del mixer di sistema operativo, routing bit-perfect a bassissima latenza, equalizzazione parametrica da studio e interfaccia adattiva.
 </p>
 
-[📥 Scarica Ora](#-download-ufficiali--canali-di-rilascio) • [🧙‍♂️ Setup Wizard](#-primo-avvio-setup-wizard-guidato) • [💼 Versioni Portable](#-come-usare-le-versioni-portable) • [💬 Community & Feedback](#-community-segnalazioni-e-feedback)
+[📥 Scarica Ora](#-download-ufficiali--canali-di-rilascio) • [🧙‍♂️ Setup Wizard](#-primo-avvio-setup-wizard-guidato) • [💼 Versioni Portable](#-come-usare-le-versioni-portable) • [⚖️ Note Legali & Privacy](#-note-legali-privacy--licenze) • [💬 Community](#-community-segnalazioni-e-feedback)
 
 </div>
 
@@ -150,6 +151,16 @@ Siamo felici di ricevere il tuo parere per rendere LIONApex sempre più fedele e
 
 ---
 
-## 📜 Licenza
+## ⚖️ Note Legali, Privacy & Licenze
 
-Distribuito con licenza **MIT**. Consulta il file [`LICENSE`](LICENSE) per i dettagli completi.
+LIONApex è distribuito gratuitamente, orientato alla massima tutela dell'utente e alla conformità con le normative europee (GDPR) e internazionali:
+
+* 📜 **Licenza Software**: Distribuito sotto licenza permissiva **MIT**. Consulta [`LICENSE`](LICENSE).
+* 🔒 **Informativa sulla Privacy & GDPR (Zero Telemetria)**: Nessun dato analitico, nessun tracciamento remoto, elaborazione 100% in locale. Consulta [`PRIVACY.md`](PRIVACY.md).
+* ⚖️ **Note Legali & Disclaimer (Copyright & Dual-Use)**: LIONApex è un riproduttore multimediale neutrale per file locali legittimi. L'utente è l'unico responsabile del rispetto del diritto d'autore. Consulta [`DISCLAIMER.md`](DISCLAIMER.md).
+* 🧩 **Componenti di Terze Parti & Codec**: Riconoscimento completo delle licenze aperte (libopus, Symphonia, wavicle, ape-decoder, Tauri, ecc.). Consulta [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md).
+
+### 🏷️ Marchi Registrati & Attribuzioni
+* **ASIO is a trademark of Steinberg Media Technologies GmbH, registered in Europe and other countries.**
+* Windows® è un marchio registrato di Microsoft Corporation.
+* macOS® è un marchio di Apple Inc. Linux® è un marchio registrato di Linus Torvalds. Tutti gli altri marchi appartengono ai rispettivi proprietari.
